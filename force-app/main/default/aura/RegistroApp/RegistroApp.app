@@ -1,4 +1,5 @@
 <aura:application>
-    <c:Formulario/>
+    <c:FormularioRegistro/>
     <aura:registerEvent name="insertIntoStock" type="c:insertIntoStock"/>
 </aura:application>	
+    

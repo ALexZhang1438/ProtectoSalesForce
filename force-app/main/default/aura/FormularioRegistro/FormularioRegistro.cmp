@@ -1,4 +1,13 @@
 <aura:component>
-    <input type="text" aura:id="input"/>
-    <input type="button" onclick="{!c.sendInputText}" value="Send Info"/>
+    <table>
+        <th>Matricula</th>
+        <th>Marca</th>
+        <th>Modelo</th>
+        <th>Color</th>
+        <input type="text" aura:id="matricula"/>
+        <input type="text" aura:id="marca"/>
+        <input type="text" aura:id="modelo"/>
+        <input type="text" aura:id="color"/>
+        <input type="button" onclick="{!c.addStockVehicules}" value="Send Info"/>
+    </table>
 </aura:component>	
