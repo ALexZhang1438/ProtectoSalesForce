@@ -1,0 +1,9 @@
+<aura:component>
+<input type="text" aura:id="nombreComercial"/>
+<input type="text" aura:id="nombreCliente"/>
+<input type="text" aura:id="matriculaVenta"/>
+<input type="text" aura:id="fechaVenta"/>
+<input type="text" aura:id="precioVenta"/>
+<input type="button" onclick="{!c.sendFormularioVentas}" value="Send Venta"/>
+</aura:component>	
+    
