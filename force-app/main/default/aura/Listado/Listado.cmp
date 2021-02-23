@@ -2,7 +2,6 @@
     <aura:handler event="c:insertIntoVentas" action="{!c.addToTable}" />
     <aura:attribute name="output" type="string[]" />
     <table border="1px solid black">
-
         <aura:iteration items="{!v.output}" var="out" indexVar="index">
             <tr>
                 <td>
