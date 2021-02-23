@@ -1,3 +1,6 @@
 <aura:event type="APPLICATION" description="Event template">
-    <aura:attribute name="input" type="string"/>
+    <aura:attribute name="matricula" type="string"/>
+    <aura:attribute name="marca" type="string"/>
+    <aura:attribute name="modelo" type="string"/>
+    <aura:attribute name="color" type="string"/>
 </aura:event>

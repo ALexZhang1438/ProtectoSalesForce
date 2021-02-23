@@ -1,0 +1,25 @@
+<aura:component>
+    <aura:handler event="c:insertIntoStock" action="{!c.addToStock}" />
+    <aura:attribute name="output" type="string[]" />
+    <table border="1px solid black">
+        <aura:iteration items="{!v.output}" var="out" indexVar="index">
+            <tr>
+                <td>
+                    {!index}
+                </td>
+                <td>
+                    {!out.matricula}
+                </td>
+                <td>
+                    {!out.marca}
+                </td>
+                <td>
+                    {!out.modelo}
+                </td>
+                <td>
+                    {!out.color}
+                </td>
+            </tr>
+        </aura:iteration>
+    </table>
+</aura:component>	
