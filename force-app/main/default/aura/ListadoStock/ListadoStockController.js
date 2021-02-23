@@ -1,14 +1,15 @@
 ({
     addToStock : function(component, event, helper) {
-     var input1 = event.getParam("matricula");
-     var input2 = event.getParam("marca");
-     var input3 = event.getParam("modelo");
-     var input4 = event.getParam("color");
-     console.log("Motrando Datos");
-     console.log(input1);
-    if(input1){
+     var matricula = event.getParam("arguments").matricula;
+     var marca = event.getParam("arguments").marca;
+     var modelo = event.getParam("arguments").modelo;
+     var color = event.getParam("arguments").color;
+     console.log("antes de mostrar datos");
+     console.log(matricula, marca, modelo, color);
+    if(input1 != null){
+        console.log("Motrando Datos");
         var list = component.get("v.output");
-        var objeto1 = {matricula: input1, marca: input2, modelo: input3, color: input4}
+        var objeto1 = {matricula: matricula, marca: marca, modelo: modelo ,color: color}
         // var objeto2 = {marca: input2}
         // var objeto3 = {modelo: input3}
         // var objeto4 = {color: input4}
