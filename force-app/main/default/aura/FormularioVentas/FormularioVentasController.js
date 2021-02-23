@@ -6,29 +6,29 @@
         var fechaVenta = component.find('fechaVenta').getElement().value;
         var precioVenta = component.find('precioVenta').getElement().value;
         //insertar nombre comercial      
-        var appevent =$A.get("e.c:insertIntoVentas");
-        appevent.setParams({"nombreComercial":nombreComercial});
-        console.log("disparando evento:"+ nombreComercial);
-        appevent.fire()
+        var appevent1 =$A.get("e.c:insertIntoVentas");
+        appevent1.setParams({"nombreComercial":nombreComercial});
+        console.log("disparando nombreComercial:"+ nombreComercial);
+        appevent1.fire()
         //insertar nombre cliente      
-        var appevent =$A.get("e.c:insertIntoVentas");
-        appevent.setParams({"nombreCliente":nombreCliente});
-        console.log("disparando evento:"+ nombreCliente);
-        appevent.fire()
+        var appevent2 =$A.get("e.c:insertIntoVentas");
+        appevent2.setParams({"nombreCliente":nombreCliente});
+        console.log("disparando nombreCliente:"+ nombreCliente);
+        appevent2.fire()
         //insertar matricula     
-        var appevent =$A.get("e.c:insertIntoVentas");
-        appevent.setParams({"matriculaVenta":matriculaVenta});
-        console.log("disparando evento:"+ matriculaVenta);
-        appevent.fire()
+        var appevent3 =$A.get("e.c:insertIntoVentas");
+        appevent3.setParams({"matriculaVenta":matriculaVenta});
+        console.log("disparando matriculaVenta:"+ matriculaVenta);
+        appevent3.fire()
         //insertar fecha venta      
-        var appevent =$A.get("e.c:insertIntoVentas");
-        appevent.setParams({"fechaVenta":fechaVenta});
-        console.log("disparando evento:"+ fechaVenta);
-        appevent.fire()
+        var appevent4 =$A.get("e.c:insertIntoVentas");
+        appevent4.setParams({"fechaVenta":fechaVenta});
+        console.log("disparando fechaVenta:"+ fechaVenta);
+        appevent4.fire()
         //insertar precio      
-        var appevent =$A.get("e.c:insertIntoVentas");
-        appevent.setParams({"precioVenta":precioVenta});
-        console.log("disparando evento:"+ precioVenta);
-        appevent.fire()
+        var appevent5 =$A.get("e.c:insertIntoVentas");
+        appevent5.setParams({"precioVenta":precioVenta});
+        console.log("disparando precioVenta:"+ precioVenta);
+        appevent5.fire()
     }
 })

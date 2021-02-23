@@ -1,3 +1,7 @@
 <aura:event type="APPLICATION" description="Event template">
-      <aura:attribute name="input" type="string"/>
+      <aura:attribute name="nombreComercial" type="string"/>
+      <aura:attribute name="nombreCliente" type="string"/>
+      <aura:attribute name="matriculaVenta" type="string"/>
+      <aura:attribute name="fechaVenta" type="string"/>
+      <aura:attribute name="precioVenta" type="string"/>
 </aura:event>
