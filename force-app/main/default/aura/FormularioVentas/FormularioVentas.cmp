@@ -14,11 +14,11 @@
         </tr>
         <tr>
             <th>Fecha Venta</th>
-            <input type="text" aura:id="fechaVenta" />
+            <input type="date" aura:id="fechaVenta" />
         </tr>
         <tr>
             <th>Precio Venta</th>
-            <input type="text" aura:id="precioVenta" />
+            <input type="number" aura:id="precioVenta" />
         </tr>
         <tr>
             <input type="button" onclick="{!c.sendFormularioVentas}" value="Send Venta" />

@@ -1,28 +1,39 @@
 <aura:component>
     <aura:handler event="c:insertIntoVentas" action="{!c.addToTable}" />
     <aura:attribute name="output" type="string[]" />
-    <table border="1px solid black">
-        <aura:iteration items="{!v.output}" var="out" indexVar="index">
-            <tr>
-                <td>
-                    {!index}
-                </td> 
-                <tr>
-                    {!out.nombreComercial}
-                </tr>
-                <tr>
-                    {!out.nombreCliente}
-                </tr>
-                <tr>
-                    {!out.matriculaVenta}
-                </tr>
-                <tr>
-                    {!out.fechaVenta}
-                </tr>
-                <tr>
-                    {!out.precioVenta}
-                </tr>
-            </tr>    
-        </aura:iteration>
+
+    <table style="border: 1px solid black;">
+        <tr>
+            <td>
+                <th>Comercial:</th>
+                <aura:iteration items="{!v.output}" var="out" indexVar="index">
+                    {!out.nombreComercial}&nbsp;
+                </aura:iteration>
+            </td>
+            <td>
+                <th>Cliente:</th>
+                <aura:iteration items="{!v.output}" var="out" indexVar="index">
+                    {!out.nombreCliente}&nbsp;
+                </aura:iteration>
+            </td>
+            <td>
+                <th>Matricula:</th>
+                <aura:iteration items="{!v.output}" var="out" indexVar="index">
+                    {!out.matriculaVenta}&nbsp;
+                </aura:iteration>
+            </td>
+            <td>
+                <th>Fecha Venta:</th>
+                <aura:iteration items="{!v.output}" var="out" indexVar="index">
+                    {!out.fechaVenta}&nbsp;
+                </aura:iteration>
+            </td>
+            <td>
+                <th>Precio Venta:</th>
+                <aura:iteration items="{!v.output}" var="out" indexVar="index">
+                    {!out.precioVenta}&nbsp;
+                </aura:iteration>
+            </td>
+        </tr>
     </table>
 </aura:component>
