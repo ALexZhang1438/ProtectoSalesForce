@@ -1,6 +1,6 @@
 <aura:component>
   <form>
-    <table>
+    <table aura:id="registros">
         <tr>
             <th>Matricula</th>
             <input type="text" aura:id="matricula" />

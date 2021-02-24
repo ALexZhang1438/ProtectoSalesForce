@@ -8,22 +8,22 @@
 
         //Meter el campo Marricula 
         var appMatricula =$A.get("e.c:insertIntoStock");
-        appMatricula.setParams({"input":matricula});
+        appMatricula.setParams({"matricula":matricula});
         console.log("disparando evento:"+ matricula);
         appMatricula.fire()
         //Meter el campo marca 
         var appeMarca =$A.get("e.c:insertIntoStock");
-        appeMarca.setParams({"input":marca});
+        appeMarca.setParams({"marca":marca});
         console.log("disparando evento:"+ marca);
         appeMarca.fire()
         //Meter el campo modelo 
         var appModelo =$A.get("e.c:insertIntoStock");
-        appModelo.setParams({"input":modelo});
+        appModelo.setParams({"modelo":modelo});
         console.log("disparando evento:"+ modelo);
         appModelo.fire()
         //Meter el campo color 
         var appColor =$A.get("e.c:insertIntoStock");
-        appColor.setParams({"input":color});
+        appColor.setParams({"color":color});
         console.log("disparando evento:"+ color);
         appColor.fire()
     }
