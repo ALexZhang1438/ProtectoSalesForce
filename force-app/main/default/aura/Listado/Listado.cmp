@@ -6,23 +6,23 @@
             <tr>
                 <td>
                     {!index}
-                </td>
-                <td>
+                </td> 
+                <tr>
                     {!out.nombreComercial}
-                </td>
-                <td>
+                </tr>
+                <tr>
                     {!out.nombreCliente}
-                </td>
-                <td>
+                </tr>
+                <tr>
                     {!out.matriculaVenta}
-                </td>
-                <td>
+                </tr>
+                <tr>
                     {!out.fechaVenta}
-                </td>
-                <td>
+                </tr>
+                <tr>
                     {!out.precioVenta}
-                </td>
-            </tr>
+                </tr>
+            </tr>    
         </aura:iteration>
     </table>
 </aura:component>
