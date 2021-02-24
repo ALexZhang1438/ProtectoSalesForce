@@ -1,37 +1,38 @@
 <aura:component>
     <aura:handler event="c:insertIntoVentas" action="{!c.addToTable}" />
     <aura:attribute name="output" type="string[]" />
-
-    <table style="border: 1px solid black;">
+    <table style="border: 1px solid black; align-content: center;">
         <tr>
-            <td>
-                <th>Comercial:</th>
+            <td style="border: 1px solid black;">&nbsp;Comercial&nbsp;</td>
+            <td style="border: 1px solid black;">&nbsp;Cliente&nbsp;</td>
+            <td style="border: 1px solid black;">&nbsp;Matricula&nbsp;</td>
+            <td style="border: 1px solid black;">&nbsp;Fecha Venta&nbsp;</td>
+            <td style="border: 1px solid black;">&nbsp;Precio Venta &nbsp;</td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid black;">
                 <aura:iteration items="{!v.output}" var="out" indexVar="index">
-                    {!out.nombreComercial}&nbsp;
+                    <tr>{!out.nombreComercial}</tr>
                 </aura:iteration>
             </td>
-            <td>
-                <th>Cliente:</th>
+            <td style="border: 1px solid black;">
                 <aura:iteration items="{!v.output}" var="out" indexVar="index">
-                    {!out.nombreCliente}&nbsp;
+                    <tr>{!out.nombreCliente}</tr>
                 </aura:iteration>
             </td>
-            <td>
-                <th>Matricula:</th>
+            <td style="border: 1px solid black;">
                 <aura:iteration items="{!v.output}" var="out" indexVar="index">
-                    {!out.matriculaVenta}&nbsp;
+                    <tr>{!out.matriculaVenta}</tr>
                 </aura:iteration>
             </td>
-            <td>
-                <th>Fecha Venta:</th>
+            <td style="border: 1px solid black;">
                 <aura:iteration items="{!v.output}" var="out" indexVar="index">
-                    {!out.fechaVenta}&nbsp;
+                    <tr>{!out.fechaVenta}</tr>
                 </aura:iteration>
             </td>
-            <td>
-                <th>Precio Venta:</th>
+            <td style="border: 1px solid black;">
                 <aura:iteration items="{!v.output}" var="out" indexVar="index">
-                    {!out.precioVenta}&nbsp;
+                    <tr>{!out.precioVenta}</tr>
                 </aura:iteration>
             </td>
         </tr>
