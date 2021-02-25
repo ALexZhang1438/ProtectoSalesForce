@@ -1,25 +1,34 @@
 <aura:component>
     <aura:handler event="c:insertIntoStock" action="{!c.addToStock}" />
     <aura:attribute name="output" type="string[]" />
-    <table border="1px solid black">
-        <aura:iteration items="{!v.output}" var="out" indexVar="index">
-            <tr>
-                <td>
-                    {!index}
-                </td>
-                <td>
-                    {!out.matricula}
-                </td>
-                <td>
-                    {!out.marca}
-                </td>
-                <td>
-                    {!out.modelo}
-                </td>
-                <td>
-                    {!out.color}
-                </td>
-            </tr>
+    <table style="border: 1px solid black; align-content: center;">
+        <tr>
+            <td style="border: 1px solid black;">&nbsp;Matricula&nbsp;</td>
+            <td style="border: 1px solid black;">&nbsp;Marca&nbsp;</td>
+            <td style="border: 1px solid black;">&nbsp;Modelo&nbsp;</td>
+            <td style="border: 1px solid black;">&nbsp;Color&nbsp;</td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid black;">
+                <aura:iteration items="{!v.output}" var="out" indexVar="index">
+        <tr>{!out.matricula}</tr>
         </aura:iteration>
+        </td>
+        <td style="border: 1px solid black;">
+            <aura:iteration items="{!v.output}" var="out" indexVar="index">
+                <tr>{!out.marca}</tr>
+            </aura:iteration>
+        </td>
+        <td style="border: 1px solid black;">
+            <aura:iteration items="{!v.output}" var="out" indexVar="index">
+                <tr>{!out.modelo}</tr>
+            </aura:iteration>
+        </td>
+        <td style="border: 1px solid black;">
+            <aura:iteration items="{!v.output}" var="out" indexVar="index">
+                <tr>{!out.color}</tr>
+            </aura:iteration>
+        </td>
+        </tr>
     </table>
-</aura:component>	
+</aura:component>
