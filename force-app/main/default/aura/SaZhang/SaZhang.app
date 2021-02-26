@@ -8,6 +8,9 @@
             <c:ListadoStock />
         </td>
         <td>
+            <h1>Contador</h1>
+        </td>
+        <td>
             <!-- ventas -->
             <c:FormularioVentas />
             <c:Listado />
