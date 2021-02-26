@@ -31,7 +31,7 @@
         console.log("disparando precioVenta:"+ precioVenta);
         appevent5.fire()
         //evento restar
-        var restarStock =$A.get("e.c:restaToContadorStock");
+        var restarStock =$A.get("e.c:restaIntoContadorStock");
         console.log("restando stock");
         restarStock.fire()
     }

@@ -1,17 +1,18 @@
 ({
     addToContadorStock: function (component, event, helper) {
         console.log("recibiendo evento suma" );
-        var objeto1 = component.get("v.output");
-        //objeto1.contadorStock + 1;
-        component.set("v.output", objeto1.contadorStock + 1);
-        console.log("valor objeto1"+objeto1)
+        var suma = component.get("v.output");
+        suma.contadorStock + 1;
+        component.set("v.output", suma);
+        console.log("valor suma "+ suma)
         console.log(component.get("v.output"));
     },
     restaToContadorStock: function (component, event, helper) {
         console.log("recibiendo evento resta" );
-        var objeto = component.get("v.output");
-        objeto.contadorStock - 1;
-        component.set("v.output", objeto);
+        var resta = component.get("v.output");
+        resta.contadorStock + 1;
+        component.set("v.output", resta);
+        console.log("valor resta "+ resta)
         console.log(component.get("v.output"));
     },
     doInit: function (component, event, helper){
