@@ -1,3 +1,18 @@
 <aura:component>
+    <aura:handler event="c:insertIntoContadorStock" action="{!c.addToContadorStock}" />
+    <aura:attribute name="output" type="string[]" />
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <table style="border: 1px solid black; align-content: center;">
+        <tr>
+            <td style="border: 1px solid black;">&nbsp;Stock&nbsp;</td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid black;">
+                <aura:iteration items="{!v.output}" var="out" indexVar="index">
+        <tr>{!out.contadorStock}</tr>
+        </aura:iteration>
+        </td>
+        </tr>
 
-</aura:component>	
+    </table>
+</aura:component>

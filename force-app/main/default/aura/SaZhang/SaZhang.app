@@ -8,7 +8,7 @@
             <c:ListadoStock />
         </td>
         <td>
-            <h1>Contador</h1>
+            <c:ContadorStock/>
         </td>
         <td>
             <!-- ventas -->

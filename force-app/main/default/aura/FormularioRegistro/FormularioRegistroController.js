@@ -26,5 +26,10 @@
         appColor.setParams({"color":color});
         console.log("disparando evento:"+ color);
         appColor.fire()
+        //evento sumar
+        var sumarStock =$A.get("e.c:insertIntoContadorStock");
+        console.log("sumando stock");
+        sumarStock.fire()
+        
     }
 })
