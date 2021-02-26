@@ -18,7 +18,7 @@
         <input type="text" aura:id="color" />
       </tr>
       <tr>
-        <input type="button" onclick="{!c.addStockVehicules}" value="Send Info" />
+        <input type="button" onclick="{!c.addStockVehicules}" value="Send Registro" />
       </tr>
       <br></br>
     </table>
